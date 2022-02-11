@@ -39,15 +39,27 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         GameState = GameStates.IsGameLoaded;
+
+        LevelManager.Instance.GenerateLevel();
+        PlayerManager.Instance.GeneratePlayer();
+
+        CanvasManager.Instance.InGamePanel.SetLevelText();
+        CanvasManager.Instance.InGamePanel.SetCoinText();
+
+        CanvasManager.Instance.InGamePanel.ActivateTapToStartButton();
     }
+
 
     public void GameOver()
     {
         GameState = GameStates.IsGameOver;
 
 
-        Time.timeScale = 0;
+        CanvasManager.Instance.FailPanel.ShowPanel();
+        AudioManager.Instance.PlaySound("GameOverSound");
+
         Debug.Log("kaybettiniz");
 
     }
+
 }

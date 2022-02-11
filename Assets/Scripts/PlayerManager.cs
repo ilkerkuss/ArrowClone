@@ -28,5 +28,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         _currentPlayer = Instantiate(_playerPrefab,_playerPrefab.transform.position,Quaternion.identity);
+
+        CameraController.Instance.SetTarget(_currentPlayer); // set new camera target 
     }
 }

@@ -17,7 +17,12 @@ public class FailPanelController : CanvasController
     {
         GameManager.Instance.RestartGame();
 
+        AudioManager.Instance.StopSound("GameOverSound");
+
+        HidePanel();
+
     }
 
 
 }
+

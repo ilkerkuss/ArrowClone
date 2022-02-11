@@ -13,6 +13,7 @@ public class ArrowManager : MonoBehaviour
     [SerializeField] private GameObject _arrowObj;
 
     private Vector3 _arrowScale = new Vector3(0.0333333351f, 0.600000024f, 0.0333333351f);
+    private Vector3 _biggerArrowScale = new Vector3(0.066f, 1.2f, 0.033f);
 
 
     private void Awake()
@@ -75,8 +76,8 @@ public class ArrowManager : MonoBehaviour
             GameObject go = Instantiate(_arrowObj);
             Transform trans = go.transform;
 
-            //trans.localScale = Vector3.zero;
-            //trans.DOScale(_arrowScale * 2, .5f).OnComplete(() => { trans.DOScale(_arrowScale, .3f); }); 
+            trans.localScale = Vector3.zero;
+            trans.DOScale(_biggerArrowScale, .5f).OnComplete(() => { trans.DOScale(_arrowScale, .3f); }); 
 
 
             trans.transform.SetParent(_parentObj.transform, false);

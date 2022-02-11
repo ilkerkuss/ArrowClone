@@ -13,10 +13,10 @@ public class InGamePanelController : CanvasController
 
     void Start()
     {
-        
+        SetLevelText();
+        SetCoinText();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -24,10 +24,13 @@ public class InGamePanelController : CanvasController
 
     public void SetLevelText()
     {
-        _levelText.text = LevelManager.Instance.GetCurrentLevel().ToString();
+        _levelText.text = "Level "+ LevelManager.Instance.GetCurrentLevel().ToString();
     }
 
-
+    public void SetCoinText() //set coin number of player
+    {
+        _coinText.text = LevelManager.Instance.GetCurrentCoin().ToString();
+    }
 
     public void ActivateTapToStartButton()
     {
@@ -37,6 +40,13 @@ public class InGamePanelController : CanvasController
     public void DisableTapToStartButton()
     {
         _tapToStartButton.gameObject.SetActive(false);
+    }
+
+    public void OnClickTapToStartButton()
+    {
+        GameManager.Instance.GameState = GameManager.GameStates.IsGamePlaying;
+
+        DisableTapToStartButton();
     }
 
 

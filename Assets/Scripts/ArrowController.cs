@@ -5,8 +5,10 @@ using System;
 
 public class ArrowController : MonoBehaviour
 {
+    /*
     public delegate void ObjectEvents();
     public static event  ObjectEvents CollideBullseye;
+    */
 
     //public static event Action<String>CollideBullseye;
 
@@ -47,6 +49,7 @@ public class ArrowController : MonoBehaviour
         }
         */
 
+        /*
         if (collision.transform.CompareTag("Enemy"))
         {
 
@@ -63,14 +66,20 @@ public class ArrowController : MonoBehaviour
             }
 
         }
-
-        else if (collision.transform.CompareTag("Bullseye"))
+        */
+        /*
+        if (collision.transform.CompareTag("Bullseye"))
         {
             CollideBullseye?.Invoke(); //event invoke bullseye collision
 
+            //PlayerPrefs.SetInt("Coin", ArrowManager.Instance.GetArrowNumber()*10);
             ArrowManager.Instance.DecreaseArrow(ArrowManager.Instance.GetArrowNumber());
+            
+
+            CanvasManager.Instance.LevelPassPanel.ShowPanel();
             Debug.Log("tebrikler");
         }
+        */
 
     }
 }

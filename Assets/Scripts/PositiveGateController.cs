@@ -80,6 +80,7 @@ public class PositiveGateController : MonoBehaviour
                 ArrowManager.Instance.IncreaseArrow((OperationValue-1) * ArrowManager.Instance.GetArrowNumber());
             }
 
+            AudioManager.Instance.PlaySound("PositiveGateSound");
             gameObject.GetComponent<BoxCollider>().enabled = false;
 
 

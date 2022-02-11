@@ -94,6 +94,7 @@ public class NegativeGateController : MonoBehaviour
                 }
             }
 
+            AudioManager.Instance.PlaySound("NegativeGateSound");
             gameObject.GetComponent<BoxCollider>().enabled = false;
 
 

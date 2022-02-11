@@ -21,7 +21,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        SwerveMove();
+        if (GameManager.Instance.GameState == GameManager.GameStates.IsGamePlaying)
+        {
+            SwerveMove();
+        }
+        
 
     }
 

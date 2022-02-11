@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 8937983231291300678}
   - component: {fileID: 8937983231291300679}
   - component: {fileID: 8937983231291300672}
+  - component: {fileID: 376173046644060017}
   m_Layer: 0
   m_Name: Bullseye
   m_TagString: Bullseye
@@ -656,6 +657,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3, y: 1, z: 2}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
+--- !u!114 &376173046644060017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937983231291300674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1611a898459c604797ad0cd6110ff5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8937983231584773143
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +966,7 @@ GameObject:
   - component: {fileID: 8937983231791624625}
   - component: {fileID: 8937983231791624626}
   - component: {fileID: 8937983231791624627}
+  - component: {fileID: 1288985520384073962}
   m_Layer: 0
   m_Name: Bullseye (2)
   m_TagString: Bullseye
@@ -1038,6 +1052,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3, y: 1, z: 2}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
+--- !u!114 &1288985520384073962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937983231791624637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1611a898459c604797ad0cd6110ff5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8937983231854302358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1300,7 @@ GameObject:
   - component: {fileID: 8937983232401046253}
   - component: {fileID: 8937983232401046254}
   - component: {fileID: 8937983232401046255}
+  - component: {fileID: 3998048161681011543}
   m_Layer: 0
   m_Name: Bullseye (1)
   m_TagString: Bullseye
@@ -1359,6 +1386,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3, y: 1, z: 2}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
+--- !u!114 &3998048161681011543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937983232401046249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1611a898459c604797ad0cd6110ff5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1394382067844774162
 PrefabInstance:
   m_ObjectHideFlags: 0

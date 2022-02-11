@@ -15,12 +15,14 @@ public class LevelController : MonoBehaviour
 
     private void OnEnable()
     {
-        ArrowController.CollideBullseye += CheckLevelPassed;
+        //ArrowController.CollideBullseye += CheckLevelPassed;
+        BullseyeController.CollideBullseye += CheckLevelPassed;
     }
 
     private void OnDisable()
     {
-        ArrowController.CollideBullseye -= CheckLevelPassed;
+        //ArrowController.CollideBullseye -= CheckLevelPassed;
+        BullseyeController.CollideBullseye -= CheckLevelPassed;
     }
 
 
